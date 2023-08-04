@@ -1,4 +1,4 @@
-package main.java.com.qa.testscripts;
+package test.java.com.qa.testscripts;
 import org.testng.annotations.Test;
 import java.net.URL;
 import org.openqa.selenium.support.ui.ExpectedConditions;
