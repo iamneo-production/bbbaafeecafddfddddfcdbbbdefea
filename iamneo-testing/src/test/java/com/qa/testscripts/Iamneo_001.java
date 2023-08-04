@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-public class Iamneo_001 {
+public class Iamneo_001 { //PraveenR
 
 	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver=null;
