@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.java.com.qa.testscripts.Iamneo_001" class="method navigator-link" hash-for-method="testcase_001">testcase_001</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.com.qa.testscripts.Iamneo_001" class="method navigator-link" hash-for-method="BackPage">BackPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.com.qa.testscripts.Iamneo_001" class="method navigator-link" hash-for-method="CurrentURL">CurrentURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.com.qa.testscripts.Iamneo_001" class="method navigator-link" hash-for-method="NextPage">NextPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.java.com.qa.testscripts.Iamneo_001" class="method navigator-link" hash-for-method="iamNeo">iamNeo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,45 +134,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">test.java.com.qa.testscripts.Iamneo_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testcase_001">
-                  </a> <!-- testcase_001 -->
-                  <span class="method-name">testcase_001</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: cannot find Chrome binary
-Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;bbbaafeecafddfddddfcdbbbdefea-0&apos;, ip: &apos;10.56.92.2&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.162+&apos;, java.version: &apos;11.0.18&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)
-	at test.java.com.qa.testscripts.Testbase.setup(Testbase.java:24)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 10 stack frames
-</div> <!-- stack-trace -->
+                  <a name="BackPage">
+                  </a> <!-- BackPage -->
+                  <span class="method-name">BackPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CurrentURL">
+                  </a> <!-- CurrentURL -->
+                  <span class="method-name">CurrentURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NextPage">
+                  </a> <!-- NextPage -->
+                  <span class="method-name">NextPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="iamNeo">
+                  </a> <!-- iamNeo -->
+                  <span class="method-name">iamNeo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -168,12 +180,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;parameter name=&quot;Url&quot; value=&quot;https://www.iamneo.ai/&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Iamneo_001&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.java.com.qa.testscripts.Iamneo_001&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Iamneo_001 --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,7 +196,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Iamneo_001 (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -211,16 +222,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testcase_001')
+data.setCell(0, 1, 'NextPage')
 data.setCell(0, 2, 'test.java.com.qa.testscripts.Iamneo_001')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 2263);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'iamNeo')
+data.setCell(1, 2, 'test.java.com.qa.testscripts.Iamneo_001')
+data.setCell(1, 3, 1800);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CurrentURL')
+data.setCell(2, 2, 'test.java.com.qa.testscripts.Iamneo_001')
+data.setCell(2, 3, 230);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'BackPage')
+data.setCell(3, 2, 'test.java.com.qa.testscripts.Iamneo_001')
+data.setCell(3, 3, 78);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -247,20 +270,30 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.java.com.qa.testscripts.Iamneo_001</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup(https://www.iamneo.ai/)</span>
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testcase_001</span>
-                <span class="method-start">3559 ms</span>
+                <span class="method-name">BackPage</span>
+                <span class="method-start">17702 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">3562 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">CurrentURL</span>
+                <span class="method-start">17783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NextPage</span>
+                <span class="method-start">18014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">iamNeo</span>
+                <span class="method-start">20278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">22081 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
