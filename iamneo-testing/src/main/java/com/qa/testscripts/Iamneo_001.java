@@ -1,4 +1,4 @@
-package test.java.com.qa.testscripts;
+package main.java.com.qa.testscripts;
 import org.testng.annotations.Test;
 import java.net.URL;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-public class Iamneo_001 
+public class Iamneo_001 {
 
 	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver=null;
